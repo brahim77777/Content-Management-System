@@ -180,7 +180,8 @@ return [
     'this_device' =>'هذا الجهاز' ,
     'photo' =>'الصورة' ,
     'select_photo' => 'اختر صورة جديدة',
-    'remove_photo' =>'حذف الصورة'
+    'remove_photo' =>'حذف الصورة',
+    'sorry'=>'عذرا'
 
 
 
