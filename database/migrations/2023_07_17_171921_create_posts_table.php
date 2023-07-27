@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->string('title' , 256);
-            $table->string('slug' , 10)->unique();
+            $table->string('slug')->unique();
             $table->text('body');
-            $table->string('img_path')->nullable();
+            $table->string('image_path')->nullable();
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->boolean('approved')->default(false);
             $table->foreignId('category_id')->constrained()->cascadeOnDelete();
